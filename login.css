@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    background-color: #333;
+    min-height: 100vh;  
+    background: orangered;
+    display: grid;
+    place-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 300;
+    line-height: 1.5;
+ 
+}
+
+button{
+    padding: 1rem 3rem; 
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.modal{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: grid;
+    place-items: center; 
+    background:rgba(0,0,0,0.3);
+}.modal .card{
+    background: #fff;
+    width: 50rem;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    padding: 2.5rem;
+    position: relative;
+}
+
+.modal .card #close{
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: 1.3rem;
+}
+
+.modal .card .brand img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.modal .card h2{
+    margin-bottom: 2rem;
+}
+.modal .card form{
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
+}
+.modal .card input[type="email"]{
+    background: #eee;
+    width: 100%;
+    padding: 0.5rem;
+    outline: none;  
+}
+.modal .card input[type="submit"]{
+    background: orangered;
+    color: #fff;
+    padding: 0 1.6rem;
+}
+
+@media all and (max-width: 800px) {
+    .modal .card {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+    .modal .card .brand{
+        width: 15rem;
+        height: 15rem;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-top: 4rem    ;
+    }
+
+    .modal .card form {
+        display: block;
+    }
+
+    .modal .card form input[type="email"],
+    .modal .card form input[type="email"]{
+        text-align: center;
+    }
+    .modal .card form input[type="submit"]{
+        display: block;
+        width: 100%;
+        padding: 1rem 0;
+        margin-top: 0.6rem;
+
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
