@@ -5,8 +5,14 @@
     margin: 0;
     font-family: 'Poppins', sans-serif;
 }
+
 body{
-    background-color: rgb(173, 168, 168)    ;
+   background-image: url(images/dexdex.jpg);
+   background-attachment: fixed;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   height: 100vh;
 }
 
 a {
@@ -19,12 +25,7 @@ a:hover{
     transition: 0.8s;
 }
 
-.body-background{
-    background-image: url(images/dexdex.jpg);
-    background-repeat: no-repeat;
-    height: 100vh;
-    width: 100%;
-}
+
 
 .navbar{
     position: fixed;
@@ -61,18 +62,25 @@ a:hover{
     display: none;
 }
 .menu-line{
-    background-color: #fff;
+    background-color: rgba(255,255,255,0.6);
     width: 20px;
     height: 4px;
     margin-bottom: 4px;
 }
 
-
+/*media query */
 @media all and (max-width:700px){
  .navbar{
     flex-direction: column;
     position: fixed;
- }   
+ }
+body{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    width: 100%;
+}
  .nav-list .list-items{
     display: block;
     background-color: #fff;
@@ -124,8 +132,14 @@ a:hover{
         height: 100%;
         text-align: center;
         align-items: center;
+        background-size: contain;
+    
     }
+
     h1{
         font-size: 100%;
     }
 }
+
+
+
