@@ -41,9 +41,6 @@ a {
 }
 
 
-.body {
-  background-color: rgb(235, 235, 235);
-  }
   
   /*---For NavBar----*/
   * {
@@ -58,8 +55,7 @@ a {
   
   .navbar {
   position: fixed;
-  top: 0;
-  background-color: #fff;
+  background:rgba(255, 255, 255, 0.747);
   display: flex;
   height: 125px;
   width: 100%;
@@ -81,9 +77,9 @@ a {
   }
   
   .navbar.sticky{
-      padding: 1px;
+      padding: 10px;
       height: 100px;
-      background:  #fff;
+      background:rgba(255,255,255,0.6);
       
   }
   .navbar.sticky .primary-icon,
@@ -117,11 +113,12 @@ a {
   .menu-line {
       width: 20px;
       height: 3px;
-      background-color: white;
+      background-color: #333;
       margin-bottom: 4px;
+      cursor: pointer;
   }
   
-  @media all and (max-width: 800px){
+  @media all and (max-width: 700px){
       .navbar{
           flex-direction: column;
           position: fixed;
@@ -129,22 +126,33 @@ a {
   
       .nav-list .list-items{
           display: block;
-          background-color: #fff;
-          
+          top: auto;
+          background-color: rgba(255,255,255,9);
+          top: 100px        
       }
+      .nav-list .list-items:hover{
+        background-color: rgb(236, 231, 231);
+        cursor: pointer;
+
+      }
+
       .menu {
           display: block;
           position: absolute;
           right: 10px;
           top: 10px;
-          background-color: #222  ;
-      
-  }
+          cursor: pointer;
+          
+      }
       .nav-list{
           list-style-type: none;
           width: 100%;
           text-align: center;
           display: none;
+          transition: 0.9s;
+      }
+      .nav-list:hover{
+        background-color: red;
       }
   
       .primary-icon {
@@ -162,7 +170,7 @@ a {
   
   #login{
       background-color: rgba(248, 101, 104, 0.699);
-      color: rgba(255, 255, 255, 0.807);
+      color: rgba(255, 255, 255, 0.807) ;
       padding: 0;
       padding-left: 10px;
       padding-top: 5px;
@@ -178,11 +186,14 @@ a {
       transition: 0.8s;
   }
 
-  
-.section{
-  width: 100%;
-  min-height: 100vh;
-  background-color: #ddd;
+/*background color */
+body{
+  background-image: url(images/dexdex.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
 }
 .container{
   width: 80%;
@@ -197,19 +208,25 @@ a {
 .image-section{
   float: right;
   width: 40%;
+  height: 50%;
+  background-color: red;
 }
 .image-section img{
   width: 100%;
-  height: auto;
+  height: 100%;
   top: 0;
+  
 }
 .content-section .title{
   text-transform: uppercase;
   font-size: 28px;
 }
-.content-section .content h3{
+.content-section h3{
   margin-top: 20px;
-  color: #444;
+  color: rgb(238, 232, 232);
+}
+.content-section .content {
+  color: rgb(238, 232, 232);
 }
 .button-readmore {
   background-color: #3d3d3d;
@@ -279,7 +296,7 @@ a {
   }
   
   .modal .card{
-      background: #fff;
+      background: #fff  ;
       width: 50rem;
       display: flex;
       align-items: center;
