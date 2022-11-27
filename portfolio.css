@@ -30,7 +30,7 @@ a:hover{
 .navbar{
     position: fixed;
     top: 0;
-    background-color:rgba(255,255,255,0.6);
+    background-color:rgba(255, 255, 255, 0.636);
     display: flex;
     height: 130px;
     width: 100%;
@@ -54,6 +54,10 @@ a:hover{
     display: inline-block;
     padding: 20px 10px;
 }
+.list-items:hover{
+    color: red;
+    transition: 0.3s;
+  }
 .primary-icon{
     height: 150px;
     width: 200px;
@@ -62,10 +66,11 @@ a:hover{
     display: none;
 }
 .menu-line{
-    background-color: rgba(255,255,255,0.6);
+    background-color: #333;
     width: 20px;
     height: 4px;
     margin-bottom: 4px;
+    cursor: pointer;
 }
 
 /*media query */
@@ -74,24 +79,25 @@ a:hover{
     flex-direction: column;
     position: fixed;
  }
-body{
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    
-    width: 100%;
-}
+
  .nav-list .list-items{
     display: block;
     background-color: #fff;
+    cursor: pointer;
     
 }
+.nav-list .list-items:hover{
+    background-color: rgb(236, 231, 231);
+    cursor: pointer;
+    cursor: pointer;
+
+  }
 .menu {
     display: block;
     position: absolute;
     right: 10px;
     top: 10px;
-    background-color: #222  ;
+    
 
 }
 .nav-list{
