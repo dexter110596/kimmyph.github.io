@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+  font-family: 'Poppins', sans-serif;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  color: rgb(218, 227, 235);
+}
+
+.fa {
+  padding: 5px;
+  font-size: 18px;
+  width: 32px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 1px;
+  border-radius: 100%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: #fff;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+
+  
+  /*---For NavBar----*/
+  * {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+  }
+  
+  a:hover {
+      transition: 0.8s;
+  }
+  
+  .navbar {
+  position: fixed;
+  background:rgba(255, 255, 255, 0.747);
+  display: flex;
+  height: 125px;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 100000;
+  transition: 0.5s;
+  }
+  .list-items{
+    color: #333;
+  }
+  .list-items:hover{
+    color: red;
+    transition: 0.3s;
+  }
+  
+  #active{
+      color: red;
+  }
+  
+  .navbar.sticky{
+      padding: 10px;
+      height: 100px;
+      background:rgba(255,255,255,0.6);
+      
+  }
+  .navbar.sticky .primary-icon,
+  .navbar.sticky ul li a
+  {
+      color: #333;
+  }
+  .navbar.sticky ul li a:hover{
+      color: red;
+  }
+  
+  .nav-list {
+      list-style-type: none;  
+  }
+  
+  .nav-list .list-items {
+  display: inline-block;
+  padding: 20px 10px;
+  
+  }
+  
+  .primary-icon {
+      height: 150px;
+      width: 200px;
+  }
+  
+  .menu {
+      display: none;
+  }
+  
+  .menu-line {
+      width: 20px;
+      height: 3px;
+      background-color: #333;
+      margin-bottom: 4px;
+      cursor: pointer;
+  }
+  
+  @media all and (max-width: 700px){
+      .navbar{
+          flex-direction: column;
+          position: fixed;
+      }
+  
+      .nav-list .list-items{
+          display: block;
+          top: auto;
+          background-color: rgba(255,255,255,9);
+          top: 100px        
+      }
+      .nav-list .list-items:hover{
+        background-color: rgb(236, 231, 231);
+        cursor: pointer;
+
+      }
+
+      .menu {
+          display: block;
+          position: absolute;
+          right: 10px;
+          top: 10px;
+          cursor: pointer;
+          
+      }
+      .nav-list{
+          list-style-type: none;
+          width: 100%;
+          text-align: center;
+          display: none;
+          transition: 0.9s;
+      }
+      .nav-list:hover{
+        background-color: red;
+      }
+  
+      .primary-icon {
+          margin-top: 5px;
+          margin-left: 5px;
+          width: 180px;
+          height: 125px;
+      }
+  
+      .active {
+          display: block;
+      }
+  }
+  
+  
+  #login{
+      background-color: rgba(248, 101, 104, 0.699);
+      color: rgba(255, 255, 255, 0.807) ;
+      padding: 0;
+      padding-left: 10px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-right: 10px;
+      display: relative;
+      cursor: pointer;
+      
+      
+  }
+  #login:hover{
+      opacity: 0.7;
+      transition: 0.8s;
+  }
+
+/*background color */
+body{
+  background-image: url(images/dexdex.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+.container{
+  width: 80%;
+  display: block;
+  margin: auto;
+  padding-top: 100px;
+}
+.content-section{
+  float: left;
+  width: 55%;
+}
+.image-section{
+  float: right;
+  width: 40%;
+  height: 50%;
+  background-color: rgba(144, 141, 141, 0.636);;
+}
+.image-section .form{
+  width: 100%;
+}
+.image-section img{
+  width: 100%;
+  height: 100%;
+  top: 0;
+  
+}
+.content-section .title{
+  text-transform: uppercase;
+  font-size: 28px;
+}
+.content-section h3{
+  margin-top: 20px;
+  color: rgb(238, 232, 232);
+}
+.content-section .content {
+  color: rgb(238, 232, 232);
+}
+.button-readmore {
+  background-color: #3d3d3d;
+  color: #fff;
+  font: arial;
+  text-decoration: none;
+  letter-spacing: 1.2px;
+  width: 25%;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 15px;
+  top: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+}
+.button-readmore:hover{
+  opacity: 0.7;
+  transition: 0.8s;
+  color: #fff;
+}
+
+@media all and (max-width: 900px) {
+  .container {
+    width: 80%;
+    display: block;
+    margin: auto;
+    top: 100px;
+    padding-top: 50px;
+  }
+  .content-section  {
+    float: none;
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+  .image-section{
+    float: none;
+    display: block;
+    margin: auto;
+    width: 100%;
+  }
+  .title{
+    text-align: center;
+    padding-top: 40px;
+  }
+  .button-readmore{
+    text-align: center;
+    width: 100%;
+  }
+ 
+
+}
+  
+  
+  .modal{
+      width: 100%;
+      height: 100%;
+      top: 0;
+      position: fixed;
+      display: none;
+      place-items: center; 
+      background:rgba(0,0,0,0.3);
+      z-index: 1000000;
+      animation: openModal 1s ease forwards;
+  
+  }
+  
+  .modal .card{
+      background: #fff  ;
+      width: 50rem;
+      display: flex;
+      align-items: center;
+      gap: 3rem;
+      padding: 2.5rem;
+      position: relative;
+  }
+  
+  .modal .card #close{
+      position: absolute;
+      top: 2rem;
+      right: 2rem;
+      font-size: 1.3rem;
+  }
+  
+  .modal .card .brand img{
+      display: block;
+      width: 100%;
+      height: 100%;
+  }
+  
+  .modal .card h2{
+      margin-bottom: 2rem;
+  }
+  .modal .card form{
+      margin-top: 2rem;
+      width: 100%;
+      display: flex;
+      justify-content: space-between; 
+  }
+  .modal .card input[type="email"]{
+      background: #eee;
+      width: 100%;
+      padding: 0.5rem;
+      outline: none;  
+  }
+  .modal .card input[type="submit"]{
+      background: orangered;
+      color: #fff;
+      padding: 0 1.6rem;
+  }
+  
+  @keyframes openModal {
+      from {
+          opacity: 0;
+      }
+      to{
+          opacity: 1;
+      }
+  }
+  
+  
+  @media all and (max-width: 800px) {
+      .modal .card {
+          flex-direction: column;
+          width: 100%;
+          padding: 0;      
+          text-align: center;
+      }
+      .modal .card .brand{
+          width: 15rem;
+          height: 15rem;
+          border-radius: 50%;
+          overflow: hidden;
+          margin-top: 4rem    ;
+      }
+  
+      .modal .card form {
+          display: block;
+      }
+  
+      .modal .card form input[type="email"],
+      .modal .card form input[type="email"]{
+          text-align: center;
+      }
+      .modal .card form input[type="submit"]{
+          display: block;
+          width: 100%;
+          padding: 1rem 0;
+          margin-top: 0.6rem;
+  
+      }
+  }
+    
+  textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+  }
+  input[type=button], input[type=submit], input[type=reset] {
+    background-color: #333;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
