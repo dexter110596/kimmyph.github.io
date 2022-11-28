@@ -21,12 +21,19 @@ a:hover {
     color: red;
     transition: 0.8s;
 }
-
+body{
+    background-image: url(images/dexdex.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+ }
 .navbar {
 position: fixed;
 top: 0;
-background-color: #fff;
-color: black;
+background:rgba(255, 255, 255, 0.747);
+color: #333;
 display: flex;
 height: 125px;
 width: 100%;
@@ -43,7 +50,7 @@ transition: 0.5s;
 .navbar.sticky{
     padding: 10px;
     height: 105px;
-    background:  #fff;
+    background:#fff;
     
 }
 .navbar.sticky .primary-icon,
@@ -77,11 +84,11 @@ padding: 20px 10px;
 .menu-line {
     width: 20px;
     height: 3px;
-    background-color: white;
+    background-color: #222;
     margin-bottom: 4px;
 }
 
-@media all and (max-width: 800px){
+@media all and (max-width: 700px){
     .navbar{
         flex-direction: column;
         position: fixed;
@@ -92,12 +99,17 @@ padding: 20px 10px;
         background-color: #fff;
         
     }
+    .nav-list .list-items:hover{
+        background-color: rgb(236, 231, 231);
+        cursor: pointer;
+
+      }
     .menu {
         display: block;
         position: absolute;
         right: 10px;
         top: 10px;
-        background-color: #222  ;
+       
     
 }
     .nav-list{
@@ -169,11 +181,6 @@ padding: 20px 10px;
     color: orange;
 }
 
-body {
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-color: #222;
-}
 
 .checked {
     color: orange;
@@ -181,7 +188,7 @@ body {
 
 .cards {
     display: grid;      
-    grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
     margin: 0 auto;
     max-width: 1000px;
     margin-top: 100px;
@@ -192,6 +199,7 @@ body {
 
 .card {
     box-shadow: 0 2 10px rgba(100, 49, 49, 0.1);
+    background:rgba(255, 255, 255, 0.747);
     display: inline-block;
 }
 
@@ -283,7 +291,7 @@ body {
 
 .modal .card{
     background: #fff;
-    width: 5rem;
+    width: 50rem;
     display: flex;
     align-items: center;
     gap: 5rem;
