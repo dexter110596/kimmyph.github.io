@@ -92,6 +92,7 @@ padding: 20px 10px;
     .navbar{
         flex-direction: column;
         position: fixed;
+        width: 100%;
     }
 
     .nav-list .list-items{
@@ -199,7 +200,7 @@ padding: 20px 10px;
 
 .card {
     box-shadow: 0 2 10px rgba(100, 49, 49, 0.1);
-    background:rgba(255, 255, 255, 0.747);
+    background:rgba(165, 163, 163, 0.747);
     display: inline-block;
 }
 
