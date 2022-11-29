@@ -208,8 +208,8 @@ body{
 .image-section{
   float: right;
   width: 40%;
-  height: 50%;
-  background-color: rgba(144, 141, 141, 0.636);;
+    
+  background-color: rgba(82, 81, 81, 0.636);
 }
 .image-section .form{
   width: 100%;
@@ -252,7 +252,7 @@ body{
   color: #fff;
 }
 
-@media all and (max-width: 900px) {
+@media all and (max-width: 800px) {
   .container {
     width: 80%;
     display: block;
@@ -271,6 +271,7 @@ body{
     display: block;
     margin: auto;
     width: 100%;
+    top: 60%;
   }
   .title{
     text-align: center;
@@ -398,15 +399,25 @@ body{
   input[type=button], input[type=submit], input[type=reset] {
     background-color: #333;
     border: none;
-    color: white;
-    padding: 10px 20px;
+    color: #fff;
+    padding: 8px 15px;
     text-decoration: none;
-    margin: 4px 2px;
+    margin: 1px 1px;
     cursor: pointer;
   }
   input[type=text] {
     width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
+    padding: 3px 7px;
+    margin: 5px 0;
     box-sizing: border-box;
   }
+  
+  .submit{
+    background-color: #333;
+    color: #ffff;
+  }
+  .submit:hover{
+    background-color: rgb(81, 81, 81);
+    color: #fff;
+  }
+  
