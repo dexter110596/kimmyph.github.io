@@ -45,6 +45,10 @@ for (i=0; i<20; i++){
 }
 
 
+function Submit(){
+     alert("Message has been submitted")
+}
+
 
 
 
