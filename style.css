@@ -199,9 +199,10 @@ padding: 20px 10px;
 
 
 .card {
-    box-shadow: 0 2 10px rgba(100, 49, 49, 0.1);
+    box-shadow: 0 2 10px rgba(219, 212, 212, 0.1);
     background:rgba(165, 163, 163, 0.747);
     display: inline-block;
+
     
 }
 
@@ -277,6 +278,16 @@ padding: 20px 10px;
     font-size: 1rem;
     cursor: pointer;
 }
+
+@media all and (max-width: 800px) {
+    .card{
+        flex-direction: column;
+        padding-left: 7%;
+        padding-right: 7%;
+    }
+}
+
+
 
 .modal{
     width: 100%;
@@ -369,7 +380,8 @@ padding: 20px 10px;
         text-align: center;
     }
     .modal .card .brand{
-        width: 15rem;
+        border-radius: 50%;
+        width: 12rem;
         height: 8rem;
         overflow: hidden;   
         margin-top: 2rem;
