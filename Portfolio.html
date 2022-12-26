@@ -1,54 +1,298 @@
+<html>
+    <head>
+        <title>Kimmy StayCation PH</title>
+        <meta charset="utf-8">
+        <link rel="icon" type="image/x-icon" href="images/kim.png">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,300&display=swap" rel="stylesheet">     
+        <link rel="stylesheet" href="portfolio.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">  
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
 
-<!DOCTYPE HTML>
-<html lang="en">
-<head>
-	<title>Kimmy StayCation PH</title>
-	<link rel="icon" type="image/x-icon" href="images/kim.png">
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE-edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,300&display=swap" rel="stylesheet"> 
-	<link rel="stylesheet" href="portfolio.css">
-	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">  
-	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
- 
+<body class="body">
 
-<body>
+<div class="main-container"><!--Start of container-->
 
-	<nav class="navbar">
-		<div class="">
-			<a href="#"><img class="primary-icon" src="images/kim.png" alt=""></a>	
-		</div>
-		<ul class="nav-list" id="navi-list">
-			<li style="color: red;" class="list-items"><a href="#">Home</a></li>
-			<li class="list-items"><a href="about.html">About</a></li>
-			<li class="list-items"><a href="Contact.html">Contact Us</a></li>
-			<li class="list-items"><a href="index.html">Services</a></li>
-		</ul>
+ <!--------------------------------------------------------------------Nav Bar------------------------------------------------------------>       
+ <nav class="navbar" id="navbar">
+    <div>
+        <a href="index.html">
+            <img class="primary-icon" src="images/kim.png" alt="">
+        </a>
+    </div>
 
-		<div class="menu" id="toggleButton">
-			<div class="menu-line"></div>
-			<div class="menu-line"></div>
-			<div class="menu-line"></div>
-		</div>
-	</nav>
+    <ul class="nav-list" id="navi-list">
+        <li class="list-items"><a href="index.html">Home</a></li>
+        <li class="list-items"><a href="about.html">About</a></li>
+        <li class="list-items"><a href="Contact.html">Contact Us</a></li>
+        <li style="color: red;" class="list-items"><a href="#">Services</a></li>
+    </ul>
+
+    <div class="menu" id="toggleButton">
+       <div class="menu-line"></div>
+       <div class="menu-line"></div>
+       <div class="menu-line"></div>
+    </div>
+
+</nav>
+
+<!--------------------------------1st Modal---------------------------------------->
+<div class="modal" id="modal1">
+    <div class="card">
+      <i style="cursor: pointer;" class="uil uil-multiply" id="close"></i>
+      <div class="brand">
+        <img style="width: 200px;" src="images/TAGAYTAY HAMPTON VILLAS.jpg" alt="">
+      </div>
+    <div class="info">
+        <h3>Tagaytay Hampton Villas</h3>
+        <p style="color: #333; font-size: 13px;">Price: <span>&#8369;</span> 3,834</p>
+        <p style="color: #333; font-size: 13px;"> Address: 4XHV+WPR, Santa Rosa - Tagaytay Rd, Tagaytay, Cavite</p>
+        <p style="color: #333; font-size: 13px;"> Contact#: <span>&#9742;</span> 0998 280 3992</p>
+      <!--<h2>Tagaytay Hampton Villas</h2>
+      <p>(INCLUSIONS):
+        ✔️2Bedrooms
+        ✔️2 Bathrooms
+        ✔️Extra Mattress
+        ✔️Towels
+        ✔️Wifi
+        ✔️Smart Tv
+        ✔️NETFLIX
+        ✔️AC Rooms 
+        ✔️2 heater
+        <br>-->
+   <form action="#">
+        <input type="submit" value="INCLUSIONS" class="submit" onclick="modal1()">
+   </form> 
+  </div>  
+    </div>
+</div>
 
 
-	<div class="text">
-		<h1 style="color: whitesmoke;">Kimmy StayCation PH</h1>
-		<p style="color:  whitesmoke;">Hi my name is Kimberly Anne Lopez. Agent in my own Kimmy StayCation PH Page.
-		<p style="color:  whitesmoke;">My page is to give clients a way of seeing, booking and paying for appointments online through your website.</p>
-		<br>
-		<a class="services" href="index.html">View Services</a>
-	
-	</div>
+<!--------------------------------2nd Modal---------------------------------------->
+
+<div class="modal" id="modal2">
+    <div class="card">
+      <i style="cursor: pointer;" class="uil uil-multiply" id="close"></i>
+      <div class="brand">
+        <img style="width: 200px;" src="images/TAGAYTAY HAMPTON VILLAS.jpg" alt="">
+      </div>
+    <div class="info">
+          <h3>Trees Residences Fairview QC</h3>
+            <p style="color: #333; font-size: 13px;">Price: <span>&#8369;</span> 3,834</p>
+            <p style="color: #333; font-size: 13px;">Address: SM City Fairview Annex 2 Quirino Highway Quezon City</p>
+            <p style="color: #333; font-size: 13px;">Contact#: <span>&#9742;</span> 0927 328 0390</p>
+          <!--<p>(INCLUSIONS):</p>
+           <p>✅43 inches SMART TV,</p> 
+            <p>✅UNLI MOVIES with NETFLIX,</p> 
+            <p>✅UNLIMITED WIFI  50mpbs,</p> 
+            <p>✅+ 150/ head POOL ACCESS 🏊‍♀️,</p>-->
+    <form action="#">
+        <a href=""><input type="submit" value="INCLUSIONS" class="submit"></a>
+    </form> 
+  </div>  
+    </div>
+</div>
 
 
-<script src="portfolio.js"></script>
+<!-------------------------------3rd Modal---------------------------------------->
+<div class="modal" id="modal3">
+    <div class="card">
+      <i style="cursor: pointer;" class="uil uil-multiply" id="close"></i>
+      <div class="brand">
+        <img style="width: 200px;" src="images/sanlorenzo1.jpg" alt="">
+      </div>
+    <div class="info">
+      <h3>San Lorenzo Tower</h3>
+      <p style="color: #333; font-size: 13px;">Price: <span>&#8369;</span> 3,834</p>
+      <p style="color: #333; font-size: 13px;">Address: 2251 EDSA cor, Chino Roces Ave, Makati, 1231 Metro Manila</p>
+      <p style="color: #333; font-size: 13px;">Contact#: <span>&#9742;</span> (02) 8810 3333</p>
+      <!--<br>
+      <p>(INCLUSIONS):
+        ☑WIFI, 
+        *videoke,
+        *Pillows and linens,
+        *Ps4 gaming,
+        *SMART TV,
+        *Sofa bed,
+        *Closet,-->
+    <form action="#">
+        <a href=""><input type="submit" value="INCLUSIONS" class="submit"></a>
+    </form> 
+  </div>  
+    </div>
+</div>
+  
+</div>
+  
+</div>
 
-	
+
+<!------------------------------------------------------------- Rooms--------------------------------------------------------------------------->
+<br>
+<br>
+    <div class="cards">
+        
+       
+        <div class="card">
+            
+            <img src="images/TAGAYTAY HAMPTON VILLAS.jpg" alt="" class="card-image">
+
+            <div style="background: rgba(0,0,0,0.10);" class="card_content">
+               <h1 style="font-size: 15px; text-align: center; color: rgb(228, 225, 225);">Tagaytay Hampton Villas</h1>
+                <!--<p style="color: #eee; font-size: 13px; text-align: center;"> Address: 4XHV+WPR, Santa Rosa - Tagaytay Rd, Tagaytay, Cavite</p>
+                <p style="color: #eee; font-size: 13px; text-align: center;"> Phone#: 0998 280 3992</p>  <br>-->
+
+            </div>
+
+            <div class="card-info">
+                      
+                <div class="status">
+                    <a style="font-size: 13.5px;" href="https://www.google.com/maps/dir/14.4841913,121.0679065/tagaytay+hampton+villas+google+map/@14.309599,120.8931201,11z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x33bd7a1939a07f39:0x637f94f77e01f54d!2m2!1d120.9942994!2d14.1299087">Directions</a> 
+                </div>
+                <div>   
+                    <a class="more-details" id="login1" class="btn btn-info btn-lg" data-toggle="modal1" data-target="#myModal1" data-modal="modal1" style="cursor: pointer;">More Details</a>
+                </div>
+
+            </div>
+
+        </div>
+        
+       
+        <div class="card">
+            
+            <img src="images/Trees Residences.jpg" alt="" class="card-image">
+
+            <div style="background: rgba(0,0,0,0.10);" class="card_content">
+                <h1 style="font-size: 15px; text-align: center; color: rgb(228, 225, 225);">Trees Residences</h1>
+                <!--<p style="color: #eee; font-size: 13px; text-align: center;">Address: SM City Fairview Annex 2 Quirino Highway Quezon City</p>
+                <p style="color: #eee; font-size: 13px; text-align: center;">Phone#: 0927 328 0390</p>
+            <br>-->
+            </div>
+
+            <div class="card-info">
+          
+                <div class="status">
+                    <a style="font-size: 13.5px;" href="https://www.google.com/maps/place/The+Residences@Fairview/@14.7167465,121.0329162,14z/data=!4m10!1m2!2m1!1sTrees+Residences+Fairview+QC!3m6!1s0x3397b0bc7c84f343:0xa46fb1581affa326!8m2!3d14.6972417!4d121.0647477!15sChxUcmVlcyBSZXNpZGVuY2VzIEZhaXJ2aWV3IFFDkgEScmVhbF9lc3RhdGVfYWdlbmN54AEA!16s%2Fg%2F1w2yrd8r">Directions</a>
+                </div>
+
+                <div>
+                    <a class="more-details" id="login1" class="btn btn-info btn-lg" data-toggle="modal1" data-target="#myModal1" data-modal="modal2" style="cursor: pointer;">More Details</a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="card">
+            
+            <img src="images/sanlorenzo1.jpg" alt="" class="card-image">
+
+            <div style="background: rgba(0,0,0,0.10);" class="card_content">
+                <h1 style="font-size: 15px; text-align: center; color: rgb(228, 225, 225);">San Lorenzo Place </h1>
+                <!--<p style="color: #eee; font-size: 13px; text-align: center;">Address: Roxas Boulevard, Pasay, 1307 Manila, Philippines</p>
+                <p style="color: #eee; font-size: 13px; text-align: center;">Phone#: 0927 328 0390</p>
+            <br>-->
+            </div>
+
+            <div class="card-info">
+          
+                <div class="status">
+                    <a style="font-size: 13.5px;" href="https://www.google.com/maps/dir/14.4841913,121.0679065/San+Lorenzo+Place+map/@14.5158988,121.0054989,13z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x3397c93d8fe5c703:0x1e38613ba018b178!2m2!1d121.0183076!2d14.5422364">Directions</a>
+                </div>
+                <div>
+                    <a class="more-details" id="login1" class="btn btn-info btn-lg" data-toggle="modal1" data-target="#myModal1" data-modal="modal3" style="cursor: pointer;">More Details</a>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="card">
+            
+            <img src="images/azure.jpg" alt="" class="card-image">
+
+            <div style="background: rgba(0,0,0,0.10);" class="card_content">
+                <h1 style="font-size: 15px; text-align: center; color: rgb(228, 225, 225); text-decoration: underline;">Azure Urban Resort Residences</h1>
+                <!--<p style="color: #eee; font-size: 13px; text-align: center;">Address: Azure Urban Residences, KM 16 W Service Rd, Parañaque</p>
+                <p style="color: #eee; font-size: 13px; text-align: center;">Phone#: 0927 328 0390</p>
+            <br>--> 
+            </div>
+
+            <div class="card-info">
+          
+                <div>
+                    <p></p>
+                </div>
+                <div>
+                    <a class="more-details"  href="">More Details</a>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="card">
+            
+            <img src="images/cocoon.jpg" alt="" class="card-image">
+
+            <div style="background: rgba(0,0,0,0.10);" class="card_content">
+                <h1 style="font-size: 15px; text-align: center; color: rgb(228, 225, 225); text-decoration: underline;">Cocoon Hotel</h1>
+                <!--<p style="color: #eee; font-size: 13px; text-align: center;">Address: Azure Urban Residences, KM 16 W Service Rd, Parañaque</p>
+                <p style="color: #eee; font-size: 13px; text-align: center;">Phone#: 0927 328 0390</p>
+            <br>-->
+            </div>
+
+            <div class="card-info">
+          
+                <div>
+                    <p></p>
+                </div>
+                <div>
+                    <a class="more-details"  href="">More Details</a>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="card">
+            
+            <img src="images/cypress-towers.jpg" alt="" class="card-image">
+
+            <div style="background: rgba(0,0,0,0.10);" class="card_content">
+                <h1 style="font-size: 15px; text-align: center; color: rgb(228, 225, 225); text-decoration: underline;">Cypress Tower</h1>
+                <!--<p style="color: #eee; font-size: 13px; text-align: center;">Address: Azure Urban Residences, KM 16 W Service Rd, Parañaque</p>
+                <p style="color: #eee; font-size: 13px; text-align: center;">Phone#: 0927 328 0390</p>
+            <br>-->
+            </div>
+
+            <div class="card-info">
+          
+                <div>
+                    <p></p>
+                </div>
+                <div>
+                    <a class="more-details"  href="">More Details</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div> <!--End of Container-->
+  
+</div>
+       
+<script src="script.js"></script>    
+
 </body>
+        
 </html>
