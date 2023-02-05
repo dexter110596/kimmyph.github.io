@@ -54,15 +54,15 @@ a {
   }
   
   .navbar {
-  position: fixed;
-  background:rgba(255, 255, 255, 0.747);
-  display: flex;
-  height: 125px;
-  width: 100%;
-  justify-content: space-around;
-  align-items: center;
-  z-index: 100000;
-  transition: 0.5s;
+    position: fixed;
+    top: 0;
+    background-color:rgba(255, 255, 255, 0.636);
+    display: flex;
+    height: 130px;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 100000;
   }
   .list-items{
     color: #333;
@@ -421,3 +421,7 @@ body{
     color: #fff;
   }
   
+  .name{
+    width: 50%;
+    min-width: 5px;
+  }
