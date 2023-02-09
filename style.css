@@ -71,7 +71,7 @@ a:hover{
     height: 4px;
     margin-bottom: 4px;
     cursor: pointer;
-}
+}   
 
 /*media query */
 @media all and (max-width:700px){
@@ -84,6 +84,7 @@ a:hover{
     display: block;
     background-color: #fff;
     cursor: pointer;
+    top: 10px;
     
 }
 .nav-list .list-items:hover{
@@ -126,17 +127,18 @@ a:hover{
 }
 .services{
     cursor: pointer;
-    background-color: #333;
+    background-color: rgba(55, 54, 54, 0.636);
     top: 10px;
     padding: 10px 10px;
     color: #fff;
+    border-radius: 3.3%;
 }
 
 footer{
     width: 100%;
-    height: 40px;
-    background-color:#333;
-    padding-top: 10px;
+    height: 60px;
+    background-color:rgba(55, 54, 54, 0.636);
+    padding-top: 20px;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -148,16 +150,12 @@ footer{
 @media all and (max-width:700px){
     .text{
         width: 100%;
-        height: 100%;
         text-align: center;
         align-items: center;
         background-size: contain;
     
     }
 
-    h1{
-        font-size: 100%;
-    }
 }
 
 
