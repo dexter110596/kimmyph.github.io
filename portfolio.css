@@ -34,7 +34,7 @@ body{
     top: 0;
     background-color:rgba(255, 255, 255, 0.636);
     display: flex;
-    height: 130px;
+    height: 120px;
     width: 100%;
     justify-content: space-around;
     align-items: center;
@@ -156,35 +156,31 @@ padding: 20px 10px;
 /* -----For Cards------- */
 
 .more-details{
-    background-color: rgba(248, 101, 104, 0.699);
-    font-family: 'Courier New', Courier, monospace;
-    color: rgb(232, 230, 230);
-    width: 300px;
-    padding-left: 8px;
-    padding-right: 8px;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    text-decoration: none;
+    background-color: #f2f2f2;
+    width: 100%;
+    cursor: pointer;
+    
+}
+.more-details a {
+    color: #333;
+}
+
+.more-details-txt{
     font-size: 14px;
+    color: rgb(232, 230, 230);
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
 }
 
 .more-details:hover{
-    opacity: 0.7;
-    color: #333;
+    opacity: 0.9;
 }
 
 .status p {
     background-color: rebeccapurple;
     float: right;   
-}
-
-.checked {
-    color: orange;
-}
-
-
-.checked {
-    color: orange;
 }
 
 .cards {
@@ -200,7 +196,7 @@ padding: 20px 10px;
 
 .card {
     box-shadow: 0 2 10px rgba(219, 212, 212, 0.1);
-    background:rgba(165, 163, 163, 0.747);
+    background:rgba(55, 54, 54, 0.636);
     display: inline-block;
 
     
@@ -230,9 +226,8 @@ padding: 20px 10px;
 
 .card-info {
     padding: 12px;
-    display: flex;
     justify-content: space-between;
-    background-color: rgb(223, 194, 160);
+    background-color: #333;
     border-bottom: 1px solid  rgb(138, 54, 54);
 }
 
@@ -284,8 +279,8 @@ button{
         flex-direction: column;
     }
     .cards{
-        margin-left: 7%;
-        margin-right: 7%;
+        margin-left: 1%;
+        margin-right: 1%;
     }
 }
 
